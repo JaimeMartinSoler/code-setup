@@ -1,9 +1,9 @@
-# Rule: Hands-off commit + push + PR
+# Rule: Hands-off git commit + push + PR
 
 **When:** A requirement is fully implemented, tests pass, and docs are updated.
 
 This rule lets you complete the delivery without stopping to ask, **provided**
-the work is on a dedicated requirement branch (see `.claude/rules/branching.md`)
+the work is on a dedicated requirement branch (see `.claude/rules/git-branching.md`)
 and never targets `main`/`develop` directly.
 
 **Steps:**

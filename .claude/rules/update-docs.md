@@ -1,6 +1,7 @@
 # Rule: Check and update docs once development is finished
 
-**When:** After the code is implemented and tests pass, before opening the PR.
+**When:** After the code is implemented and tests pass, before commiting,
+pushing, or opening the PR.
 
 A change is not done until the documentation around it is true again.
 

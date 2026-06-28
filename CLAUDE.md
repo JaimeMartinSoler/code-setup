@@ -17,8 +17,8 @@ configuration and documentation, not application code.
     requirement-implementer.md   Implements a scoped requirement end-to-end
     code-reviewer.md             Read-only reviewer of a diff/branch/PR
   rules/         Workflow rules referenced by agents and by CLAUDE.md
-    branching.md         Branch off `develop` for every requirement
-    commit-push-pr.md    Hands-off commit + push + open PR
+    git-branching.md         Branch off `develop` for every requirement
+    git-commit-push-pr.md    Hands-off commit + push + open PR
     run-tests.md         Run tests once development is finished
     update-docs.md       Update /docs, README.md, CLAUDE.md when finished
 .github/
@@ -29,10 +29,10 @@ configuration and documentation, not application code.
 
 These rules are the substance of this repo. Read the file before acting:
 
-1. **Branch per requirement** — `.claude/rules/branching.md`
+1. **Branch per requirement** — `.claude/rules/git-branching.md`
 2. **Run tests when done** — `.claude/rules/run-tests.md`
 3. **Update docs when done** — `.claude/rules/update-docs.md`
-4. **Commit, push, open PR** — `.claude/rules/commit-push-pr.md`
+4. **Commit, push, open PR** — `.claude/rules/git-commit-push-pr.md`
 
 The intended flow for any requirement: branch off `develop` → implement →
 add/run tests (green) → update docs → commit, push, and open a PR against

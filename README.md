@@ -18,8 +18,8 @@ or symlink what each repo needs.
 
 | Rule | What it enforces |
 | --- | --- |
-| [`branching`](.claude/rules/branching.md) | Branch off `develop` for every requirement — one requirement, one branch, one PR. |
-| [`commit-push-pr`](.claude/rules/commit-push-pr.md) | Hands-off delivery: stage intentionally, commit, push, open a PR against `develop`, with guardrails. |
+| [`git-branching`](.claude/rugit-branchinghing.md) | Branch off `develop` for every requirement — one requirement, one branch, one PR. |
+| [`git-commit-push-pr`](.claude/rules/git-commit-push-pr.md) | Hands-off delivery: stage intentionally, commit, push, open a PR against `develop`, with guardrails. |
 | [`run-tests`](.claude/rules/run-tests.md) | Add/update and run tests once development is finished — green before done. |
 | [`update-docs`](.claude/rules/update-docs.md) | Check and update `/docs`, `README.md`, and `CLAUDE.md` when development is finished. |
 

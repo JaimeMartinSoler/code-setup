@@ -5,7 +5,7 @@ pushing, or opening a PR.
 
 **What to do:**
 
-1. **Find how this repo tests.** Check, in order: project `CLAUDE.md`, the README,
+1. **Find how this repo tests.** Check, in order: project `CLAUDE.md`, the `README.md`,
    then the manifest (`package.json` scripts, `Makefile`, `pyproject.toml`,
    `pom.xml`, `build.gradle`, `go.mod`, etc.). Use the project's own command.
 2. **Add or update tests first.** New behaviour needs new tests; changed behaviour

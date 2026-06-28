@@ -23,8 +23,8 @@ and drives it to a review-ready state. You work autonomously but predictably.
 
 ## Workflow
 
-1. **Branch.** Follow the branching rule — create a branch off `develop` named
-   for this requirement before writing any code. See `.claude/rules/branching.md`.
+1. **Branch.** Follow the git-branching rule — create a branch off `develop` named
+   for this requirement before writing any code. See `.claude/rules/git-branching.md`.
 2. **Understand.** Restate the requirement in one or two sentences and confirm
    the acceptance criteria. Locate the files involved before editing.
 3. **Plan.** Sketch the steps. For anything non-trivial, list the files you will
@@ -35,7 +35,7 @@ and drives it to a review-ready state. You work autonomously but predictably.
    Follow `.claude/rules/run-tests.md`. Do not declare done while tests are red.
 6. **Document.** Update docs, `README.md`, and `CLAUDE.md` as needed per
    `.claude/rules/update-docs.md`.
-7. **Ship.** Commit, push, and open a PR per `.claude/rules/commit-push-pr.md`.
+7. **Ship.** Commit, push, and open a PR per `.claude/rules/git-commit-push-pr.md`.
 
 ## Definition of done
 

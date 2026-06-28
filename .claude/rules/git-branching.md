@@ -1,4 +1,4 @@
-# Rule: Branch off `develop` for every requirement
+# Rule: Git Branch off `develop` for every requirement
 
 **When:** Before writing any code for a new requirement, ticket, or feature.
 
@@ -25,6 +25,7 @@
 
 - One requirement → one branch → one PR. Do not bundle unrelated changes.
 - If you realise mid-stream that the work splits into independent requirements,
-  stop and split into separate branches.
+  ask for approval to either split into separate branches or continue with
+  current branch.
 - Branch from an up-to-date `develop`, not from another feature branch, unless
   the user explicitly asks you to stack on top of in-flight work.
