@@ -5,7 +5,7 @@ Guidance for Claude Code (and any agent) working in this repository.
 ## What this repo is
 
 `code-setup` is a **central library of reusable Claude Code configuration** —
-agents, rules, and workflow templates — that get copied or symlinked into other
+agents, rules, and GitHub Actions — that get copied or symlinked into other
 repositories so every project shares the same conventions. It contains
 configuration and documentation, not application code.
 
@@ -22,8 +22,14 @@ configuration and documentation, not application code.
     run-tests.md         Run tests once development is finished
     update-docs.md       Update /docs, README.md, CLAUDE.md when finished
 .github/
-  workflows/ci.yml   Sample CI workflow (placeholder steps — fill per repo)
+  workflows/
+    claude.yml               Claude Code on @claude mentions (issues/PRs)
+    claude-code-review.yml   Automated Claude review on every PR
 ```
+
+The workflows use the [`JaimeMartinSoler/github-actions`](https://github.com/JaimeMartinSoler/github-actions)
+custom actions and need a `CLAUDE_CODE_OAUTH_TOKEN` (or `ANTHROPIC_API_KEY`)
+repository secret.
 
 ## Working rules (apply to every change here and are meant to be reused)
 
@@ -53,5 +59,6 @@ add/run tests (green) → update docs → commit, push, and open a PR against
 ## Reusing this in another repo
 
 Copy the `.claude/agents`, `.claude/rules`, and `.github/workflows` you need into
-the target repo, then fill the CI placeholder and adjust the integration branch
-name if it isn't `develop`.
+the target repo, add the `CLAUDE_CODE_OAUTH_TOKEN` (or `ANTHROPIC_API_KEY`)
+secret, and adjust the integration branch name (rules + `base_branch` in
+`claude.yml`) if it isn't `develop`.
