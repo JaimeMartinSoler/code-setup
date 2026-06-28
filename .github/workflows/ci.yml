@@ -1,0 +1,50 @@
+# Sample CI workflow — fill in the build/test steps for the target repo.
+#
+# This is a starting point copied into other repos. Replace the placeholder
+# steps under `build-and-test` with the real setup, install, lint, and test
+# commands for the project (Node, Python, Go, JVM, etc.).
+
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+# Cancel superseded runs on the same branch/PR.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # --- TODO: replace the steps below with the project's real toolchain ---
+
+      # Example (Node):
+      # - uses: actions/setup-node@v4
+      #   with:
+      #     node-version: 20
+      #     cache: npm
+      # - run: npm ci
+      # - run: npm run lint
+      # - run: npm test
+
+      # Example (Python):
+      # - uses: actions/setup-python@v5
+      #   with:
+      #     python-version: '3.12'
+      # - run: pip install -e '.[dev]'
+      # - run: ruff check .
+      # - run: pytest
+
+      - name: Placeholder
+        run: echo "TODO: add real build, lint, and test steps for this repo"
