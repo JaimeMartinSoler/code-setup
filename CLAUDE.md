@@ -25,6 +25,8 @@ configuration and documentation, not application code.
   workflows/
     claude.yml               Claude Code on @claude mentions (issues/PRs)
     claude-code-review.yml   Automated Claude review on every PR
+scripts/
+  validate.py    Validates agent frontmatter and internal links (the "tests")
 ```
 
 The workflows use the [`JaimeMartinSoler/github-actions`](https://github.com/JaimeMartinSoler/github-actions)
@@ -54,7 +56,9 @@ add/run tests (green) → update docs → commit, push, and open a PR against
 - When you add a new agent or rule, **add it to the layout above** and to
   `README.md`.
 - This repo has no build step. "Tests" here means: frontmatter is valid, internal
-  links between files resolve, and the docs match the files on disk.
+  links between files resolve, and the docs match the files on disk. Run them with
+  `python3 scripts/validate.py` (standard library only — no dependencies). This is
+  the suite `.claude/rules/run-tests.md` refers to; keep it green before opening a PR.
 
 ## Reusing this in another repo
 

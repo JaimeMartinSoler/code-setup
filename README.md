@@ -34,6 +34,19 @@ custom actions and authenticate with a `CLAUDE_CODE_OAUTH_TOKEN` (or
 | [`claude.yml`](.github/workflows/claude.yml) | `@claude` mention in an issue, PR, or review comment | Runs Claude Code against the repo to answer or implement, branching from `develop`. |
 | [`claude-code-review.yml`](.github/workflows/claude-code-review.yml) | PR opened or updated | Posts an automated Claude review of the diff. |
 
+### Validation — `scripts/`
+
+This repo ships configuration, not application code, so its "test suite" is a
+lightweight validator. Run it before opening a PR:
+
+```
+python3 scripts/validate.py
+```
+
+It checks that every agent's frontmatter is well-formed (`name`/`description`
+present, `name` matching the filename slug) and that every internal link and
+repo-internal path in the docs resolves. Standard library only — no dependencies.
+
 ## The workflow these encode
 
 For any requirement:
