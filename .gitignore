@@ -1,6 +1,7 @@
 # Local Claude Code settings (machine/user specific — keep out of the shared repo)
-# Just for this kind of repo, allow this file
-# .claude/settings.local.json
+# Just for this kind of repo, allow this file.
+# A negation '!' is required (is not enough with a comment-out '#') because .claude/settings.local.json is git-ignored globally in most machines
+!.claude/settings.local.json
 
 # OS / editor noise
 .DS_Store
