@@ -1,5 +1,6 @@
 # Local Claude Code settings (machine/user specific — keep out of the shared repo)
-.claude/settings.local.json
+# Just for this kind of repo, allow this file
+# .claude/settings.local.json
 
 # OS / editor noise
 .DS_Store
