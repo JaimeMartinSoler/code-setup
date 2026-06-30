@@ -13,6 +13,7 @@ copy or symlink what each repo needs.
 | --- | --- |
 | [`requirement-implementer`](.claude/agents/requirement-implementer.md) | Takes one scoped requirement and drives it to a review-ready state: branch, implement, test, document, PR. |
 | [`code-reviewer`](.claude/agents/code-reviewer.md) | Read-only reviewer of a diff/branch/PR — flags correctness, security, test, and maintainability issues with a clear verdict. |
+| [`code-explainer`](.claude/agents/code-explainer.md) | Read-only explainer of code/modules/systems for a senior dev who may be new to the stack — concise, structured, and conversational, ending with what to dig into next. |
 
 ### Rules — `.claude/rules/`
 

@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Edit",
+      "Write",
+      "MultiEdit",
+      "NotebookEdit",
+      "Read",
+      "Bash(git:*)",
+      "Bash(gh:*)",
+      "Bash(rm:*)",
+      "Bash(rmdir:*)",
+      "Bash(mv:*)",
+      "Bash(cp:*)",
+      "Bash(mkdir:*)",
+      "Bash(touch:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(find:*)",
+      "Bash(npm:*)",
+      "Bash(npx:*)",
+      "Bash(node:*)",
+      "Bash(python:*)",
+      "Bash(pip:*)",
+      "Bash(pytest:*)",
+      "Bash(make:*)"
+    ],
+    "deny": [
+      "Bash(git push* main*)",
+      "Bash(git push* develop*)",
+      "Bash(git push*:main*)",
+      "Bash(git push*:develop*)",
+      "Bash(git push origin +*)",
+      "Bash(git push* --force*)",
+      "Bash(git push* -f *)",
+      "Bash(git push* -f)",
+      "Bash(git push --force*)",
+      "Bash(git push -f *)",
+      "Bash(gh pr merge*)"
+    ]
+  }
+}
