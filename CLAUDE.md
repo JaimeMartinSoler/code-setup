@@ -16,6 +16,7 @@ configuration and documentation, not application code.
   agents/        Subagent definitions (Markdown + frontmatter)
     requirement-implementer.md   Implements a scoped requirement end-to-end
     code-reviewer.md             Read-only reviewer of a diff/branch/PR
+    code-explainer.md            Read-only code explainer for a senior dev new to the stack
   rules/         Workflow rules referenced by agents and by CLAUDE.md
     git-branching.md         Branch off `develop` for every requirement
     git-commit-push-pr.md    Hands-off commit + push + open PR
